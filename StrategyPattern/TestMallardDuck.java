@@ -11,6 +11,11 @@ public class TestMallardDuck {
 
         mallardDuck.performFly();
         mallardDuck.performQuack();
+
+        //动态改变行为
+        System.out.println("模拟后期需求需要变化");
+        mallardDuck.setFlyBehavior(new FlyWithRocketPowered());
+        mallardDuck.performFly();
     }
 
 }
